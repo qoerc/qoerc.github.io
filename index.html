@@ -5,14 +5,83 @@
     <title>QO Engineering and Robotics Club</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <h1>QOHS Engineering and Robotics Club</h1>
-        <p>The newly redesigned QOERC Website is coming soon!</p>
+    <div class="w3-top">
+        <div class="w3-row">
+            <div class="w3-quarter w3-container">
+                <img src="QOERC.png">
+            </div>
+            <div class="w3-half w3-container"></div>
+            <div class="w3-quarter w3-container">
+                <p>TODO: Social Icons Here</p>
+            </div>
+        </div>
+
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('Home')">Home</button>
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('About')">About Us</button>
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('Leadership')">Leadership and
+                Mentors</button>
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('FTC')">FIRST Tech Challenge</button>
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('Calendar')">Calendar</button>
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('Sponsors')">Sponsors</button>
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('Contact')">Contact Us</button>
+            <a href="https://github.com/qoerc/qoerc.github.io/wiki" target="_blank"
+                class="w3-bar-item w3-button w3-red w3-mobile w3-right">Wiki</a>
+        </div>
     </div>
+
+    <br><br><br><br><br><br><br>
+
+    <!-- The content for each "page" should go inside the corresponding <div> tag with class "page" -->
+    <div id="Home" class="page">
+        <div class="w3-row">
+            <div class="w3-container">
+                <h1>QOHS Engineering and Robotics Club</h1>
+                <p>The newly redesigned QOERC Website is coming soon!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="About" class="page">
+
+    </div>
+
+    <div id="Leadership" class="page">
+
+    </div>
+
+    <div id="FTC" class="page">
+
+    </div>
+
+    <div id="Calendar" class="page">
+
+    </div>
+
+    <div id="Sponsors" class="page">
+
+    </div>
+
+    <div id="Contact" class="page">
+
+    </div>
+
+
+    <script>
+        //JavaScript for Opening New Page
+        function openPage(pageName) {
+            var i;
+            var x = document.getElementsByClassName("page");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(pageName).style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
