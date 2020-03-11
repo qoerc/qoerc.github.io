@@ -47,7 +47,50 @@
     </div>
 
     <div id="About" class="page" style="display:none">
-
+        <div class="w3-row">
+            <div class="w3-container">
+                <h1>About Us</h1>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-container w3-half">
+                <h4>Mission Statement</h4>
+                <p>
+                    The Quince Orchard High School Engineering & Robotics Club hopes to challenge the students of Quince
+                    Orchard High School to creatively apply STEM principles to the completion of several projects
+                    including the FIRST® Tech Challenge (FTC), 3D printing, and drone builds.
+                </p>
+                <h4>Meetings</h4>
+                <p>
+                    During the robotics season (September-January; through April if we qualify for states) we meet
+                    after-school. Outside of the robotics season we meet during lunch. See the
+                    <a href="?page=Calendar">calendar</a>
+                    for additional
+                    information.
+                </p>
+                <h4>Outreach</h4>
+                <p>
+                    Click <a href="?page=Contact">here</a> or email <a
+                        href="mailto:qorobotics@gmail.com">qorobotics@gmail.com</a> to contact us about outreach
+                    opportunities. In the past
+                    we have presented at science fairs, scout meetings, and elementary schools.
+                </p>
+                <h4>Bylaws</h4>
+                <p>
+                    <a
+                        href="https://docs.google.com/document/d/1JTdDPvG8NWlv-PTHrSoiiJAmJwEmcmNRQFf1O4Gy9Rs/edit?usp=sharing">Click
+                        here</a>
+                </p>
+            </div>
+            <div class="w3-container w3-half">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLT-ghe7Z5bRzk25Sk_Vn4oAvfoDAkvWB_&v=oVhzG42vOoY"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <p><a href="https://youtu.be/BZCciiu7jEw?t=234"><i>Click Here to see us on QOTV!</i></a></p>
+            </div>
+        </div>
     </div>
 
     <div id="Leadership" class="page" style="display:none">
@@ -80,6 +123,21 @@
                 x[i].style.display = "none";
             }
             document.getElementById(pageName).style.display = "block";
+        }
+
+        //Retrieve url paramter with given key
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) { return pair[1]; }
+            }
+            return (false);
+        }
+
+        if (getQueryVariable("page") != "") {
+            openPage(getQueryVariable("page"));
         }
     </script>
 </body>
