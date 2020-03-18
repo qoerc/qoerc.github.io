@@ -3,21 +3,10 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 
 /* Customizations we are making from "vanilla" W3 CSS */
-    .youtube {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-    }
-     
-    .youtube iframe,
-    .youtube object,
-    .youtube embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    }
+
+    /* We need to create a class to dynamically resize iFrame for both about page and calendar */ 
+
+
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
