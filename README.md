@@ -10,4 +10,6 @@ CSS Framework: https://www.w3schools.com/w3css/
 
 URL Structure: /?page=<PAGE_SLUG> (each page is differentiated by a url paramter, not a seperate html file)
 
+Contact qorobotics@gmail.com with questions or concerns
+
 
